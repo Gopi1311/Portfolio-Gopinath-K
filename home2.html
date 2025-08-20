@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gopinath K - Portfolio</title>
+    <link rel="stylesheet" href="./styleSheet.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="./assest/fevicon.png"/>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="name">
+        <span>GOPINATH K</span>
+      </div>
+      <button class="mobile-menu-button" aria-label="Toggle menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="round">
+          <h2 class="circle">GK</h2>
+        </div>
+        <div class="intro">
+          <h1 class="glowing-name">GOPINATH K</h1>
+          <div class="obj">
+            <h2 class="role">Full Stack Developer</h2>
+            <p class="desc">
+              I specialize in creating responsive, user-friendly web
+              applications using modern technologies. With expertise in both
+              frontend and backend development, I deliver complete solutions
+              that drive business growth.
+            </p>
+          </div>
+          <div class="info">
+            <a href="#contact" class="btn contact-btn">✉️ Contact Me</a>
+            <a
+              href="./assest/Gopinath_K_Resume.pdf"
+              target="_blank"
+              class="btn download-btn"
+              >👁️ View CV</a
+            >
+          </div>
+          <div class="social">
+            <a
+              href="https://github.com/Gopi1311"
+              target="_blank"
+              class="social-btn"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/gopinathk1311"
+              target="_blank"
+              class="social-btn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="mailto:gopinathk1311@gmail.com"
+              target="_blank"
+              class="social-btn"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <span class="underline"></span>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Crafting Digital Excellence</h3>
+            <p>
+              I'm a passionate Software Developer specializing in cutting-edge
+              technologies and innovative solutions. With expertise in 3D
+              spatial data analysis and advanced algorithms, I transform complex
+              challenges into elegant digital experiences.
+            </p>
+            <p>
+              Currently pushing boundaries at Q-gate Infotech, where I design
+              optimized algorithms for spatial computations and geometric data
+              processing, ensuring scalability and precision in every project.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <h2>2+</h2>
+                <span>Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <h2>10+</h2>
+                <span>Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <h2>5+</h2>
+                <span>Technologies Mastered</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills-cards">
+            <div class="skill-card">
+              <div class="card-icon">
+                <i class="bi bi-code"></i>
+              </div>
+              <div class="card-content">
+                <h4>Software Development</h4>
+                <p>
+                  Expert in Python, Java, C++, and modern frameworks with a
+                  focus on scalable solutions.
+                </p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="card-icon">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <div class="card-content">
+                <h4>Data Analysis</h4>
+                <p>
+                  Advanced EDA, machine learning, and spatial data processing
+                  expertise.
+                </p>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="card-icon">
+                <i class="bi bi-cpu-fill"></i>
+              </div>
+              <div class="card-content">
+                <h4>3D Spatial Computing</h4>
+                <p>
+                  Specialized in geometric computations and 3D data
+                  visualization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project-section -->
+      <section id="projects" class="project-section" style="background-color: transparent">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <span class="underline"></span>
+        </div>
+        <div class="project-sub">
+          <p>
+            Showcasing innovative solutions that blend cutting-edge technology
+            with creative problem-solving
+          </p>
+        </div>
+        <div class="project-layout">
+          <div class="project-btn">
+            <button class="pj-btn active">All Projects</button>
+            <button class="pj-btn">Educational</button>
+            <button class="pj-btn">E-commerce</button>
+            <button class="pj-btn">Hospital</button>
+          </div>
+          <!-- Add this inside your projects section -->
+          <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img
+                  src="./assest/pj-card1.avif"
+                  alt="Project Screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Online Examination System</h3>
+                <p class="card-desc">
+                  An Online Examination System that enables teachers to create
+                  and manage tests while students take exams seamlessly with
+                  secure authentication, automated evaluation, and adaptive
+                  difficulty.
+                </p>
+                <div class="card-tech">
+                  <span>React</span>
+                  <span>Bootstrap</span>
+                  <span>SpringBoot</span>
+                  <span>Spring JPA</span>
+                </div>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/Gopi1311/online-exam-portal-react-springboot"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                  <a
+                    href="https://live-demo.com"
+                    target="_blank"
+                    class="live-demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img
+                  src="./assest/pj-card2.jpg"
+                  alt="Project Screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Hospital Management</h3>
+                <p class="card-desc">
+                  The Hospital Management System is a web-based platform that
+                  provides patient registration, doctor appointment booking,
+                  doctor list management, hospital services information, and
+                  contact details.
+                </p>
+                <div class="card-tech">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>TailWindCss</span>
+                </div>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/Gopi1311/HospitalManagement.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                  <a
+                    href="https://hospitalmanagementservice.netlify.app/"
+                    target="_blank"
+                    class="live-demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+              <div class="card-image">
+                <img
+                  src="./assest/pj-card3.jpg"
+                  alt="Project Screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Shopping Cart</h3>
+                <p class="card-desc">
+                  A Shopping Cart Application built with React that allows users
+                  to browse products, add/remove items to cart, update
+                  quantities, view total cost, and proceed to checkout,
+                  providing a smooth e-commerce experience.
+                </p>
+                <div class="card-tech">
+                  <span>React</span>
+                  <span>Context API</span>
+                  <span>Bootstrap</span>
+                  <span>SpringBoot</span>
+                  <span>Spring JPA</span>
+                </div>
+                <div class="card-links">
+                  <a
+                    href="https://github.com/Gopi1311/shopping-cart-react-springboot.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <i class="fab fa-github"></i> View on GitHub
+                  </a>
+                  <a
+                    href="https://friendly-torte-b23cdb.netlify.app/"
+                    target="_blank"
+                    class="live-demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHINCAL SECTION -->
+      <section class="technical-section" id="skills">
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <span class="underline"></span>
+        </div>
+        <div class="technical-sub">
+          <p>
+            Mastering cutting-edge technologies to build tomorrow's solutions
+          </p>
+        </div>
+        <div class="skill-set">
+          <div class="techskillset-container">
+            <!-- Card 1 -->
+            <div class="techskill-card">
+              <div class="techskillcard-head">
+                <div class="techskill-icon">
+                  <i class="bi bi-code"></i>
+                </div>
+                <div class="techskill-title">
+                  <h3>Programming Languages</h3>
+                  <span class="tech-underline"></span>
+                </div>
+              </div>
+              <div class="techskillcard-body">
+                <div class="techskillcard-desc">
+                  <p>Java</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>JavaScript</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>SQL</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>C</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="techskill-card">
+              <div class="techskillcard-head">
+                <div class="techskill-icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <div class="techskill-title">
+                  <h3>Frameworks</h3>
+                  <span class="tech-underline"></span>
+                </div>
+              </div>
+              <div class="techskillcard-body">
+                <div class="techskillcard-desc">
+                  <p>React</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Spring Boot</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Node.js</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Express</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="techskill-card">
+              <div class="techskillcard-head">
+                <div class="techskill-icon">
+                  <i class="bi bi-tools"></i>
+                </div>
+                <div class="techskill-title">
+                  <h3>Tools</h3>
+                  <span class="tech-underline"></span>
+                </div>
+              </div>
+              <div class="techskillcard-body">
+                <div class="techskillcard-desc">
+                  <p>Git</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>VS Code</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Postman</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>MySQL Workbench</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="techskill-card">
+              <div class="techskillcard-head">
+                <div class="techskill-icon">
+                  <i class="bi bi-cloud"></i>
+                </div>
+                <div class="techskill-title">
+                  <h3>Other Skills</h3>
+                  <span class="tech-underline"></span>
+                </div>
+              </div>
+              <div class="techskillcard-body">
+                <div class="techskillcard-desc">
+                  <p>REST APIs</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Firebase</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Bootstrap</p>
+                  <span></span>
+                </div>
+                <div class="techskillcard-desc">
+                  <p>Tailwind CSS</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="achive">
+          <div class="certification">
+            <div class="cert-head">
+              <i class="bi bi-award"></i>
+              <h3>Certifications</h3>
+            </div>
+            <div class="cert-card">
+              <div class="cert-content">
+                <div class="cert-con1">
+                  <h4>FullStack Certification</h4>
+                  <p>Jspider, Bangalore</p>
+                </div>
+                <h4>2024</h4>
+              </div>
+              <div class="cert-content">
+                <div class="cert-con1">
+                  <h4>Junior Software Engineer Trainee</h4>
+                  <p>VTS Enterprise India Pvt Ltd</p>
+                </div>
+                <h4>2024</h4>
+              </div>
+              <div class="cert-content">
+                <div class="cert-con1">
+                  <h4>AR/VR Designer</h4>
+                  <p>InGage Technologies Pvt Ltd</p>
+                </div>
+                <h4>2024</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="certification">
+            <div class="cert-head">
+              <i class="bi bi-stars"></i>
+              <h3>Achivements</h3>
+            </div>
+            <div class="cert-card">
+              <div class="cert-content">
+                <div class="cert-con1">
+                  <h4>Junior Software Engineer Trainee</h4>
+                  <p>VTS Enterprise India Pvt Ltd</p>
+                </div>
+                <div class="cert-con2">
+                  <h4>2024</h4>
+                </div>
+              </div>
+              <div class="cert-content">
+                <div class="cert-con1">
+                  <h4>Junior Software Engineer Trainee</h4>
+                  <p>VTS Enterprise India Pvt Ltd</p>
+                </div>
+                <h4>2024</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- experince - section -->
+
+      <section class="experience-section" id="experience" style="background-color: transparent">
+        <div class="section-header">
+          <h2>Professional Journey</h2>
+          <span class="underline"></span>
+        </div>
+        <div class="exp-sub">
+          <p>My career path and professional growth in the tech industry</p>
+        </div>
+
+        <div class="exp-container">
+          <!-- Experience Item 1 -->
+          <div class="exp-item">
+            <div class="exp-content">
+              <div class="exp-cardhead">
+                <div class="exp-date">
+                  <i class="bi bi-calendar4-event"></i>
+                  <h4>August 2024 - January 2025</h4>
+                </div>
+                <h4>Full-time</h4>
+              </div>
+              <h3 class="exp-title">Software Developer Trainee</h3>
+              <h4 class="exp-company">VTS Enterprise India Pvt Ltd</h4>
+              <div class="loc">
+                <i class="bi bi-geo-alt"></i>
+                <p>Chennai, Tamil Nadu</p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Developed and maintained a full-stack Online Examination
+                  System using React.js, SpringBoot, and MySQL, enabling smooth
+                  exam creation, management, and evaluation.
+                </p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Collaborated on secure authentication and role-based access
+                  control, ensuring data integrity for students and teachers.
+                </p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Optimized exam workflows by integrating automated result
+                  generation and adaptive question difficulty, improving
+                  efficiency and fairness of assessments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="exp-item">
+            <div class="exp-content">
+              <div class="exp-cardhead">
+                <div class="exp-date">
+                  <i class="bi bi-calendar4-event"></i>
+                  <h4>November 2023 - January 2024</h4>
+                </div>
+                <h4>Internship</h4>
+              </div>
+              <h3 class="exp-title">AR/VR</h3>
+              <h4 class="exp-company">InGage Technologies Pvt Ltd</h4>
+              <div class="loc">
+                <i class="bi bi-geo-alt"></i>
+                <p>Chennai, Tamil Nadu</p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Developed responsive user interfaces for client projects using
+                  React.js and Tailwind CSS.
+                </p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Collaborated with UX designers to implement user-friendly
+                  designs and improve user experience.
+                </p>
+              </div>
+              <div class="exp-carddesc">
+                <i class="bi bi-lightning-charge"></i>
+                <p>
+                  Participated in code reviews and implemented best practices
+                  for frontend development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="educational">
+          <div class="education-header">
+            <h2>Educational Background</h2>
+            <span class="underline"></span>
+          </div>
+          <div class="education-container">
+            <div class="edu-card">
+              <h4>Bachelor of Technology</h4>
+              <span class="college">Knowledge Institute Of Technology</span>
+              <p>Information Technology</p>
+              <div class="year">
+                <span class="ed-year">2020 - 2024</span>
+                <span class="cgpa">CGPA: 8.1</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h4>Higher Secondary</h4>
+              <span class="college"
+                >Vethathiri Maharishi Martic Hr Sec School</span
+              >
+              <p>Computer Science</p>
+              <div class="year">
+                <span class="ed-year">2018 - 2020</span>
+                <span class="cgpa">Percentage: 66%</span>
+              </div>
+            </div>
+
+            <div class="edu-card">
+              <h4>Secondary School Education</h4>
+              <span class="college"
+                >Vethathiri Maharishi Martic Hr Sec School</span
+              >
+              <p>General Education</p>
+              <div class="year">
+                <span class="ed-year">2017 - 2018</span>
+                <span class="cgpa">Percentage: 81%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact-section -->
+
+    </main>
+  </body>
+</html>

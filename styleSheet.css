@@ -187,6 +187,7 @@ p {
   from {
     text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 8px #720fc4, 0 0 10px #720fc4;
   }
+
   to {
     text-shadow: 0 0 10px #fff, 0 0 15px #121111, 0 0 20px #050d18,
       0 0 25px #0072ff;
@@ -247,6 +248,106 @@ p {
   text-align: center;
   margin: 3rem;
   text-shadow: #003cff 5px 5px 10px;
+}
+
+@media (max-width: 1024px) {
+  .section-header {
+    margin: 2.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .underline {
+    width: 90px;
+    height: 3.5px;
+  }
+}
+
+/* 768px - Tablets */
+@media (max-width: 768px) {
+  .section-header {
+    margin: 2.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .underline {
+    width: 80px;
+    height: 3px;
+  }
+
+  .exp-sub {
+    font-size: 1.1rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+/* 425px - Large Mobile */
+@media (max-width: 425px) {
+  .section-header {
+    margin: 1.8rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .underline {
+    width: 70px;
+    height: 2.8px;
+  }
+
+  .exp-sub {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* 375px - Medium Mobile */
+@media (max-width: 375px) {
+  .section-header {
+    margin: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .underline {
+    width: 60px;
+    height: 2.5px;
+  }
+
+  .exp-sub {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+/* 320px - Small Mobile */
+@media (max-width: 320px) {
+  .section-header {
+    margin: 1.2rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .underline {
+    width: 50px;
+    height: 2px;
+  }
+
+  .exp-sub {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0 10px;
+  }
 }
 
 .underline {
@@ -431,6 +532,7 @@ p {
     margin-bottom: 1rem;
   }
 }
+
 /* Extra Small Devices (320px and below) */
 @media (max-width: 320px) {
   /* General fixes */
@@ -557,6 +659,7 @@ p {
 .project-layout {
   width: 90%;
 }
+
 /* Project Filter Buttons */
 .project-btn {
   display: flex;
@@ -1048,14 +1151,13 @@ p {
 
 /* Vertical timeline */
 .exp-container::before {
-  margin: 35px 0px;
+  margin: 35px 0px 80px;
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
   width: 4px;
-  height: 67rem;
   background: var(--gradient);
   transform: translateX(-50%);
   z-index: 1;
@@ -1275,6 +1377,7 @@ p {
   font-size: 0.85rem;
   font-weight: 600;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .education-container {
@@ -1350,11 +1453,10 @@ p {
 
 /* contact-section */
 
-
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self:center;
+  justify-self: center;
   gap: 30px;
   padding: 10px;
   width: 80vw;

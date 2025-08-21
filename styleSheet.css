@@ -1396,7 +1396,8 @@ p {
   }
 
   .exp-item:nth-child(even) {
-    left: 0;
+    left: 5%;
+    width: 95%;
   }
 
   .exp-item::after {
@@ -1405,7 +1406,7 @@ p {
   }
 
   .exp-item:nth-child(even)::after {
-    left: 20px;
+    left: -28px;
   }
 }
 
@@ -1430,6 +1431,10 @@ p {
     align-items: flex-start;
     gap: 0.8rem;
   }
+
+  .exp-item:nth-child(even)::after {
+    left: -15px;
+  }
 }
 
 /* 425px - Large Mobile */
@@ -1452,6 +1457,10 @@ p {
 
   .exp-company {
     font-size: 1rem;
+  }
+
+  .exp-item::after {
+    background-color: red;
   }
 }
 
@@ -1506,6 +1515,12 @@ p {
   .cgpa {
     font-size: 0.8rem;
     padding: 0.3rem 0.6rem;
+  }
+  .exp-item::after {
+    left: 10px;
+  }
+  .exp-item:nth-child(even)::after {
+    left: -3px;
   }
 }
 

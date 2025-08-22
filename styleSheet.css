@@ -17,6 +17,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--dark-bg);
@@ -141,7 +144,24 @@ p {
   color: var(--text-color);
   font-size: 1.5rem;
   cursor: pointer;
+
 }
+
+@media (max-width: 768px) {
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -250,8 +270,6 @@ p {
   text-shadow: #003cff 5px 5px 10px;
 }
 
-
-
 .underline {
   display: block;
   width: 150px;
@@ -356,8 +374,6 @@ p {
 .card-content h3 {
   margin-bottom: 0.5rem;
 }
-
-
 
 /* PROJECTS SECTION */
 .project-section {
@@ -610,7 +626,9 @@ p {
   box-shadow: 0 10px 30px rgba(154, 83, 221, 0.3);
   border-color: var(--primary-color);
 }
-
+.technical-section{
+  scroll-margin-top: 50px;
+}
 /* Head */
 .techskillcard-head {
   display: flex;
@@ -747,7 +765,6 @@ p {
   font-size: 0.85rem;
   color: var(--text-secondary);
 }
-
 
 /* experince section */
 .exp-container {
@@ -1190,7 +1207,6 @@ footer {
   flex-wrap: wrap;
 }
 
-
 @media (max-width: 1024px) {
   .section-header {
     margin: 2.5rem;
@@ -1205,7 +1221,7 @@ footer {
     height: 3.5px;
   }
 
-   .about-content {
+  .about-content {
     flex-direction: column;
     align-items: center;
   }
@@ -1246,7 +1262,7 @@ footer {
   .exp-item:nth-child(even)::after {
     left: -28px;
   }
- .contact-section {
+  .contact-section {
     padding: 30px;
   }
 
@@ -1313,7 +1329,7 @@ footer {
   .contact-btn {
     margin-right: 0;
   }
-   .achive {
+  .achive {
     flex-direction: column;
     align-items: center;
   }
@@ -1322,7 +1338,7 @@ footer {
     width: 100%;
     max-width: 100%;
   }
-    .technical-section {
+  .technical-section {
     padding: 3rem 1rem;
   }
 
@@ -1338,7 +1354,7 @@ footer {
   .techskill-icon {
     font-size: 2rem;
   }
-    .education-container {
+  .education-container {
     grid-template-columns: 1fr;
   }
 
@@ -1362,7 +1378,7 @@ footer {
     left: -15px;
   }
 
-   .contact-container {
+  .contact-container {
     grid-template-columns: 1fr;
     gap: 25px;
   }
@@ -1454,7 +1470,7 @@ footer {
     font-size: 0.9rem;
   }
 
-    .edu-card {
+  .edu-card {
     padding: 1.5rem;
   }
 
@@ -1475,7 +1491,7 @@ footer {
   }
 
   .exp-item::after {
-    background-color: red;
+    background-color:var(--primary-color);
   }
 
   .contact-section {
@@ -1512,7 +1528,6 @@ footer {
   }
 }
 
-
 /* 375px - Medium Mobile */
 @media (max-width: 375px) {
   .section-header {
@@ -1533,40 +1548,40 @@ footer {
     margin-bottom: 1.8rem;
   }
 
-    .navbar {
+  .navbar {
     padding: 0 0.7rem;
   }
-  
+
   .name span {
     font-size: 1.2rem;
   }
-  
+
   /* Hero section fixes */
   .hero-section {
     padding: 1.2rem;
   }
-  
+
   .circle {
     width: 85px;
     height: 85px;
     font-size: 1.7rem;
     border-width: 6px;
   }
-  
+
   .role {
     font-size: 1.4rem;
   }
-  
+
   .obj {
     width: 95%;
     padding: 0 0.5rem;
   }
-  
+
   .info {
     flex-direction: column;
     gap: 0.8rem;
   }
-  
+
   .contact-btn,
   .download-btn {
     width: 100%;
@@ -1575,207 +1590,207 @@ footer {
     padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
   }
-  
+
   .social-btn {
     width: 38px;
     height: 38px;
     font-size: 1rem;
   }
-  
+
   /* About section fixes */
   .about-section {
     padding: 2.5rem 0.8rem;
   }
-  
+
   .about-content {
     padding: 0 0.5rem;
   }
-  
+
   .skill-card {
     padding: 1rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
   .card-icon {
     margin-right: 0;
     margin-bottom: 0.8rem;
   }
-  
+
   .card-icon i {
     font-size: 2.2rem;
   }
-  
+
   .card-content {
     padding-left: 0;
   }
-  
+
   /* Stats section fixes */
   .stats {
     flex-direction: column;
     gap: 1.2rem;
   }
-  
+
   .stat-item {
     min-width: 100%;
   }
-  
+
   .stat-item h2 {
     font-size: 2.2rem;
   }
-  
+
   .stat-item span {
     font-size: 0.85rem;
   }
-  
+
   /* Experience section fixes */
   .exp-container::before {
     left: 18px;
   }
-  
+
   .exp-item {
     padding-left: 45px;
   }
-  
+
   .exp-item::after {
     left: 12px;
     width: 18px;
     height: 18px;
   }
-  
+
   .exp-item:nth-child(even)::after {
     left: 12px;
   }
-  
+
   .exp-content {
     padding: 1.1rem;
     width: 92%;
   }
-  
+
   .exp-cardhead {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.7rem;
   }
-  
+
   .exp-title {
     font-size: 1.3rem;
   }
-  
+
   .exp-company {
     font-size: 1rem;
   }
-  
+
   .exp-carddesc {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   /* Education section fixes */
   .education-container {
     gap: 1.5rem;
   }
-  
+
   .edu-card {
     padding: 1.2rem;
   }
-  
+
   .edu-card h4 {
     font-size: 1.3rem;
   }
-  
+
   .college {
     font-size: 1rem;
   }
-  
+
   .year {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.7rem;
   }
-  
+
   .ed-year,
   .cgpa {
     font-size: 0.8rem;
     padding: 0.35rem 0.7rem;
   }
-  
+
   /* Contact section fixes */
   .contact-section {
     padding: 2rem 0.8rem;
   }
-  
+
   .contact-container {
     gap: 1.2rem;
   }
-  
+
   .form {
     padding: 1.2rem;
   }
-  
+
   .form-head {
     flex-direction: column;
     gap: 0;
   }
-  
+
   .form input,
   .form textarea {
     padding: 0.9rem 1rem;
     font-size: 0.9rem;
   }
-  
+
   .form button {
     padding: 0.9rem;
     font-size: 0.95rem;
   }
-  
+
   .contact-detail {
     padding: 1rem;
     flex-direction: column;
     text-align: center;
   }
-  
+
   .contact-detail i {
     margin-right: 0;
     margin-bottom: 0.7rem;
     font-size: 1.4rem;
   }
-  
+
   .contact-detail div h6 {
     font-size: 0.95rem;
   }
-  
+
   .contact-social {
     gap: 0.8rem;
   }
-  
+
   .social-btn {
     width: 42px;
     height: 42px;
     font-size: 1.1rem;
   }
-  
+
   /* Mobile menu adjustments */
   .nav-links {
     width: 100%;
   }
-  
+
   .nav-links a {
     padding: 0.9rem;
     font-size: 0.95rem;
   }
-  
+
   /* Section header adjustments */
   .section-header h2 {
     font-size: 1.7rem;
   }
-  
+
   .underline {
     width: 85px;
     height: 3px;
   }
-  
+
   /* Text overflow prevention */
   h1,
   h2,
@@ -1785,7 +1800,7 @@ footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
-    .achive {
+  .achive {
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
@@ -1834,7 +1849,7 @@ footer {
   .cert-con2 {
     align-self: auto;
   }
-    .technical-section {
+  .technical-section {
     padding: 2.2rem 0.7rem;
   }
 
@@ -1904,7 +1919,7 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
-    .contact-section {
+  .contact-section {
     padding: 15px 10px;
   }
 
@@ -2059,7 +2074,7 @@ footer {
     font-size: 0.8rem;
   }
 
-   .techskill-card {
+  .techskill-card {
     padding: 1rem;
   }
 
@@ -2071,7 +2086,7 @@ footer {
     padding: 0.6rem;
   }
 
-    .exp-content {
+  .exp-content {
     padding: 1rem;
     width: 95%;
   }
@@ -2126,3 +2141,4 @@ footer {
     font-size: 1rem;
   }
 }
+

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gopinath K - Portfolio</title>
     <link rel="stylesheet" href="./StyleSheet.css" />
-  
+
     <!-- Bootstrap Icons -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -84,6 +84,7 @@
         </div>
       </section>
 
+      <!-- About-section  -->
       <section id="about" class="about-section">
         <div class="section-header">
           <h2>About Me</h2>
@@ -651,127 +652,171 @@
       </section>
 
       <!-- contact-section -->
-     <section class="contact-section" id="contact">
+      <section class="contact-section" id="contact">
         <div class="section-header">
-            <h2>Let's Contact</h2>
-            <span class="underline"></span>
+          <h2>Let's Contact</h2>
+          <span class="underline"></span>
         </div>
         <div class="contact-sub">
-            <p>
-                Ready to bring your next project to life? Let's discuss how we can
-                create something amazing together.
-            </p>
+          <p>
+            Ready to bring your next project to life? Let's discuss how we can
+            create something amazing together.
+          </p>
         </div>
         <div class="contact-container">
-            <div class="contact-head">
-                <h3>Get In Touch</h3>
-                <p>
-                    I'm always excited to collaborate on innovative projects and
-                    explore new opportunities. Whether you have a groundbreaking idea
-                    or need expertise in data analysis and software development, let's
-                    make it happen!
-                </p>
+          <div class="contact-head">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm always excited to collaborate on innovative projects and
+              explore new opportunities. Whether you have a groundbreaking idea
+              or need expertise in data analysis and software development, let's
+              make it happen!
+            </p>
+          </div>
+
+          <form class="form" id="contactForm">
+            <div class="form-head">
+              <div class="form-name">
+                <label for="f-name">Name</label>
+                <input
+                  type="text"
+                  id="f-name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-email">
+                <label for="f-email">Email</label>
+                <input
+                  type="email"
+                  id="f-email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
             </div>
-            
-            <form class="form" id="contactForm">
-                <div class="form-head">
-                    <div class="form-name">
-                        <label for="f-name">Name</label>
-                        <input type="text" id="f-name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-email">
-                        <label for="f-email">Email</label>
-                        <input type="email" id="f-email" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="form-subject">
-                    <label for="f-subject">Subject</label>
-                    <input type="text" id="f-subject" placeholder="Project Discussion" required>
-                </div>
-                <div class="form-message">
-                    <label for="f-message">Message</label>
-                    <textarea id="f-message" placeholder="Tell me about your project" required></textarea>
-                </div>
-                <button type="submit">
-                    <i class="bi bi-send-check-fill"></i>Send Message
-                </button>
-            </form>
-            
-            <div class="contact-details">
-                <div class="contact-detail">
-                    <i class="bi bi-envelope-at-fill"></i>
-                    <div>
-                        <span>Email</span>
-                        <h6>gopinathk1311@gmail.com</h6>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class="bi bi-telephone-outbound-fill"></i>
-                    <div>
-                        <span>Phone</span>
-                        <h6>+91 9789311062</h6>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <div>
-                        <span>Location</span>
-                        <h6>Salem, Tamil Nadu 636502</h6>
-                    </div>
-                </div>
-                <div class="contact-detail">
-                    <i class="bi bi-linkedin"></i>
-                    <div>
-                        <span>LinkedIn</span>
-                        <h6>Contact with me</h6>
-                    </div>
-                </div>
+            <div class="form-subject">
+              <label for="f-subject">Subject</label>
+              <input
+                type="text"
+                id="f-subject"
+                placeholder="Project Discussion"
+                required
+              />
             </div>
+            <div class="form-message">
+              <label for="f-message">Message</label>
+              <textarea
+                id="f-message"
+                placeholder="Tell me about your project"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">
+              <i class="bi bi-send-check-fill"></i>Send Message
+            </button>
+          </form>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <i class="bi bi-envelope-at-fill"></i>
+              <div>
+                <span>Email</span>
+                <h6>gopinathk1311@gmail.com</h6>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="bi bi-telephone-outbound-fill"></i>
+              <div>
+                <span>Phone</span>
+                <h6>+91 9789311062</h6>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <span>Location</span>
+                <h6>Salem, Tamil Nadu 636502</h6>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="bi bi-linkedin"></i>
+              <div>
+                <span>LinkedIn</span>
+                <h6>Contact with me</h6>
+              </div>
+            </div>
+          </div>
         </div>
-        
+
         <div class="social">
-            <a href="https://github.com/Gopi1311" target="_blank" class="social-btn">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/gopinathk1311" target="_blank" class="social-btn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:gopinathk1311@gmail.com" target="_blank" class="social-btn">
-                <i class="fas fa-envelope"></i>
-            </a>
+          <a
+            href="https://github.com/Gopi1311"
+            target="_blank"
+            class="social-btn"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/gopinathk1311"
+            target="_blank"
+            class="social-btn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="mailto:gopinathk1311@gmail.com"
+            target="_blank"
+            class="social-btn"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
-        
-        <hr>
-        
+
+        <hr />
+
         <footer>
-            <i class="bi bi-c-circle"></i>
-            <span>Gopinath K. Crafted with 💜 and cutting-edge technology.</span>
+          <i class="bi bi-c-circle"></i>
+          <span>Gopinath K. Crafted with 💜 and cutting-edge technology.</span>
         </footer>
-    </section>
+      </section>
     </main>
-       <script>
-        // Display current screen width
-        function updateWidth() {
-            document.getElementById('width').textContent = window.innerWidth;
+    <script>
+      // Display current screen width
+      function updateWidth() {
+        const widthDisplay = document.getElementById("width");
+        if (widthDisplay) {
+          widthDisplay.textContent = window.innerWidth;
         }
-        
-        window.addEventListener('resize', updateWidth);
-        window.addEventListener('load', updateWidth);
-        
-        // Mobile menu toggle
-        const menuButton = document.querySelector('.mobile-menu-button');
-        const navLinks = document.querySelector('.nav-links');
-        
-        menuButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+      }
+
+      // Debounce resize event for performance
+      let resizeTimeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(updateWidth, 150);
+      });
+
+      window.addEventListener("load", updateWidth);
+
+      // Mobile menu toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.querySelector(".mobile-menu-button");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (menuButton && navLinks) {
+          menuButton.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+
+          // Close mobile menu when clicking on a link
+          navLinks.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+              navLinks.classList.remove("active");
             });
-        });
+          });
+        }
+      });
     </script>
   </body>
 </html>

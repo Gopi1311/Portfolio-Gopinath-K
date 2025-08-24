@@ -786,25 +786,6 @@
       </section>
     </main>
     <script>
-      // Display current screen width
-      function updateWidth() {
-        const widthDisplay = document.getElementById("width");
-        if (widthDisplay) {
-          widthDisplay.textContent = window.innerWidth;
-        }else{
-          console.warn("width not found");
-        }
-      }
-
-      // Debounce resize event for performance
-      let resizeTimeout;
-      window.addEventListener("resize", () => {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(updateWidth, 150);
-      });
-
-      window.addEventListener("load", updateWidth);
-
       // Mobile menu toggle
       document.addEventListener("DOMContentLoaded", () => {
         const menuButton = document.querySelector(".mobile-menu-button");
